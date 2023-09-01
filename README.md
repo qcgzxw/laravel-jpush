@@ -3,7 +3,7 @@
 
 ## Install
 ```shell
-composer require mitoop/laravel-jpush
+composer require qcgzxw/laravel-jpush
 ```
 
 ## Require
@@ -32,16 +32,16 @@ composer require mitoop/laravel-jpush
     
 同步推送
 ```php
-JPush::pushNow('别名', '通知', '附加信息');
-JPush::pushNow(['别名数组'], '通知', '附加信息');
-JPush::pushNow('all', '通知', '附加信息'); // 推送给所有人
+JPush::pushNow('别名', '通知内容', '通知标题', '附加信息');
+JPush::pushNow(['别名数组'], '通知内容', '通知标题', '附加信息');
+JPush::pushNow('all', '通知内容', '通知标题', '附加信息'); // 推送给所有人
 ```
 
 异步推送
 ```php
-JPush::pushQueue('别名', '通知', '附加信息');
-JPush::pushQueue(['别名数组'], '通知', '附加信息');
-JPush::pushQueue('all', '通知', '附加信息'); // 推送给所有人
+JPush::pushQueue('别名', '通知内容', '通知标题', '附加信息');
+JPush::pushQueue(['别名数组'], '通知内容', '通知标题', '附加信息');
+JPush::pushQueue('all', '通知内容', '通知标题', '附加信息'); // 推送给所有人
 ```
 
 更多：
