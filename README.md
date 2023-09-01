@@ -2,7 +2,7 @@
 基于 `jpush/jpush` `3.6.6` 版本(当前最新版本), 三分钟完成极光推送开发.
 
 ## Install
-> composer require mitoop/laravel-jpush
+> composer require qcgzxw/laravel-jpush
 
 ## Require
 - Laravel ^7.0
@@ -34,16 +34,16 @@
     
 同步推送
 ```php
-JPush::pushNow('别名', '通知', '附加信息');
-JPush::pushNow(['别名数组'], '通知', '附加信息');
-JPush::pushNow('all', '通知', '附加信息'); // 推送给所有人
+JPush::pushNow('别名', '通知内容', '通知标题', '附加信息');
+JPush::pushNow(['别名数组'], '通知内容', '通知标题', '附加信息');
+JPush::pushNow('all', '通知内容', '通知标题', '附加信息'); // 推送给所有人
 ```
 
 异步推送
 ```php
-JPush::pushQueue('别名', '通知', '附加信息');
-JPush::pushQueue(['别名数组'], '通知', '附加信息');
-JPush::pushQueue('all', '通知', '附加信息'); // 推送给所有人
+JPush::pushQueue('别名', '通知内容', '通知标题', '附加信息');
+JPush::pushQueue(['别名数组'], '通知内容', '通知标题', '附加信息');
+JPush::pushQueue('all', '通知内容', '通知标题', '附加信息'); // 推送给所有人
 ```
 
 更多：
